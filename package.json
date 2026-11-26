@@ -1,0 +1,9 @@
+{
+  "name": "sss-otp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SSS OTP forwarder: MacroDroid -> Netlify Function -> FCM push -> PWA",
+  "dependencies": {
+    "firebase-admin": "^12.7.0"
+  }
+}

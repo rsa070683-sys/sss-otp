@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Walang client na pwedeng bumasa o sumulat.
+    // Ang Netlify functions lang (Admin SDK) ang gumagamit ng database.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
